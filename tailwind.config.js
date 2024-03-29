@@ -1,0 +1,57 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray: {
+          50: "#fafafa",
+          200: "#eaeaea",
+          500: "#998d8d",
+          600: "#7e7b7b",
+          "50_01": "#f8f8f8",
+          "50_02": "#fcfcfc",
+          "50_03": "#fffafa",
+          "500_01": "#9f8484",
+          "200_01": "#efeeee",
+          "600_01": "#787878",
+        },
+        black: { 900: "#000000", "900_3f": "#0000003f" },
+        red: { 50: "#fff0f0" },
+        cyan: {
+          50: "#e1f6f8",
+          100: "#b7e4ee",
+          700: "#028e9e",
+          900: "#045e76",
+          "50_01": "#e1f6f7",
+          "100_e0": "#b1e1ece0",
+        },
+        blue_gray: { 400: "#8b8b8b", 600: "#42658f", 900: "#141f48" },
+        blue: { 200: "#95cff9" },
+        indigo: { 700: "#2041af" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: {
+        inter: "Inter",
+        inconsolata: "Inconsolata",
+        inknutantiqua: "Inknut Antiqua",
+        inriasans: "Inria Sans",
+        inder: "Inder",
+        imfellfrenchcanonsc: "IM FELL French Canon SC",
+        inika: "Inika",
+      },
+      boxShadow: {
+        bs3: "0px 0px  6px 2.43px #e1f6f8",
+        bs: "0px 4px  4px 0px #0000003f",
+        bs1: "2px 6px  6px 0px #0000003f",
+        bs2: "4.97px 4.97px  6px 3.31px #141f48",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
